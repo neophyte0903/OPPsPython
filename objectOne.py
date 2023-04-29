@@ -4,6 +4,8 @@ class employee:   #class
         self.last=last
     def generateEmail(self):
         return f"{self.first}.{self.last}@company.com"
+    def fullName(self):
+        return("{} {}".format(self.first,self.last))
     
 
 
@@ -22,6 +24,7 @@ emp_2.last="user2"
 emp_2.email=emp_1.first+"."+emp_2.last+"@company.com"
 
 print(emp_2.generateEmail())
+print(emp_1.fullName())
 
 print(emp_1.first)
 print(emp_2.last)
